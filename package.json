@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "node --enable-source-maps dist/Test1.js",
+    "test": "node dist/Test1.js",
     "dev": "nodemon --watch src --ext ts --exec \"npm run build && npm test\""
   },
   "devDependencies": {
