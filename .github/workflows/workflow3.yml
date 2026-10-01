@@ -2,7 +2,7 @@ name: Workflow 3
 
 on:
   workflow_run:
-    workflows: ["Workflow 1"]
+    workflows: ["Workflow 2"]
     types: [completed]
     branches: [main]
 
@@ -12,4 +12,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print workflow message
-        run: echo "Workflow 3 runs after Workflow 1 succeeded"
+        run: echo "Workflow 3 runs after Workflow 2 succeeded"

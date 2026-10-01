@@ -1,9 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const utils = require("./utils").utils;
-
-const unit_Test = async () => {
-
+const utils = require("./Utils.js").utils;
+const unit_test = async () => {
     const firstActual = utils.add(2, 3);
     if (firstActual === 5) {
         console.log("Test Case 1 passed: utils.add(2, 3) === 5");
@@ -21,4 +19,4 @@ const unit_Test = async () => {
         process.exit(1);
     }
 };
-unit_Test();
+unit_test();
