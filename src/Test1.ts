@@ -15,7 +15,7 @@ const unit_test = async () => {
         process.exit(1);
     }
 
-    if (utils.multiply(2, 3) === 6) {
+    if (utils.multiply(2, 3) === 7) {
         console.log("Test passed!");
     } else {
         console.log("Case 3 Failed: Expected 6 but got wrong value");

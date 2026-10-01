@@ -4,7 +4,7 @@ import { calculate } from "./Calculator.js";
 const result = calculate(6, 3);
 
 assert.deepEqual(result, {
-  sum: 10,
+  sum: 9,
   product: 18,
   quotient: 2,
 });
