@@ -8,10 +8,10 @@ const unit_test = async () => {
         process.exit(1);
     }
 
-    if (utils.add(2, 2) === 5) {
+    if (utils.add(2, 2) === 4) {
         console.log("Test passed!");
     } else {
-        console.log("Case 2 Failed: Expected 4 but got " + utils.add(2, 2));
+        console.log("Case 2 Failed: Expected 4 but got wrong value");
         process.exit(1);
     }
 };
