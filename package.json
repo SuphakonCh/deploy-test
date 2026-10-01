@@ -16,7 +16,9 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "test": "node dist/Test1.js",
+    "test": "npm run test:unit",
+    "test:unit": "node dist/Test1.js",
+    "test:integration": "node dist/IntegrationTest.js",
     "dev": "nodemon --watch src --ext ts --exec \"npm run build && npm test\""
   },
   "devDependencies": {

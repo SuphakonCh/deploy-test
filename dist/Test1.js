@@ -1,21 +1,33 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const utils = require("./Utils.js").utils;
+const Utils_js_1 = require("./Utils.js");
 const unit_test = async () => {
-    const firstActual = utils.add(2, 3);
-    if (firstActual === 5) {
-        console.log("Test Case 1 passed: utils.add(2, 3) === 5");
+    if (Utils_js_1.utils.add(2, 3) === 5) {
+        console.log("Test passed!");
     }
     else {
-        console.error(`Test Case 1 failed: utils.add(2, 3) expected 5, received ${firstActual}`);
+        console.log("Test failed: utils.add(2, 3) === 5 ");
         process.exit(1);
     }
-    const secondActual = utils.add(3, 3);
-    if (secondActual === 6) {
-        console.log("Test Case 2 passed: utils.add(3, 3) === 6");
+    if (Utils_js_1.utils.add(2, 2) === 4) {
+        console.log("Test passed!");
     }
     else {
-        console.error(`Test Case 2 failed: utils.add(3, 3) expected 6, received ${secondActual}`);
+        console.log("Case 2 Failed: Expected 4 but got wrong value");
+        process.exit(1);
+    }
+    if (Utils_js_1.utils.multiply(2, 3) === 6) {
+        console.log("Test passed!");
+    }
+    else {
+        console.log("Case 3 Failed: Expected 6 but got wrong value");
+        process.exit(1);
+    }
+    if (Utils_js_1.utils.divide(6, 3) === 2) {
+        console.log("Test passed!");
+    }
+    else {
+        console.log("Case 4 Failed: Expected 2 but got wrong value");
         process.exit(1);
     }
 };

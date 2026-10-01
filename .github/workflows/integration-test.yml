@@ -1,4 +1,4 @@
-name: Unit Test
+name: Integration Test
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  build-and-test:
+  integration-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -28,5 +28,5 @@ jobs:
       - name: Build TypeScript
         run: npm run build
 
-      - name: Run unit tests
-        run: npm run test:unit
+      - name: Run integration tests
+        run: npm run test:integration
