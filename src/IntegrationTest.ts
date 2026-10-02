@@ -1,6 +1,6 @@
 import { calculate } from "./Calculator.js";
 
-const result = calculate(6, 3);
+const result = calculate(6, 4);
 
 if (result.sum === 9) {
   console.log("Integration Case 1 passed: sum");
