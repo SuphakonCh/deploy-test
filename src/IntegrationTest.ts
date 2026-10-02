@@ -1,12 +1,24 @@
-import assert from "node:assert/strict";
 import { calculate } from "./Calculator.js";
 
 const result = calculate(6, 3);
 
-assert.deepEqual(result, {
-  sum: 9,
-  product: 18,
-  quotient: 2,
-});
+if (result.sum === 9) {
+  console.log("Integration Case 1 passed: sum");
+} else {
+  console.error("Integration Case 1 failed: expected 9, got ", result.sum);
+  process.exit(1);
+}
 
-console.log("Integration test passed");
+if (result.product === 18) {
+  console.log("Integration Case 2 passed: product");
+} else {
+  console.error("Integration Case 2 failed: expected 18, got ", result.product);
+  process.exit(1);
+}
+
+if (result.quotient === 2) {
+  console.log("Integration Case 3 passed: quotient");
+} else {
+  console.error("Integration Case 3 failed: expected 2, got ", result.quotient);
+  process.exit(1);
+}
