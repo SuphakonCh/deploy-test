@@ -30,5 +30,12 @@ const unit_test = async () => {
         console.log("Case 4 Failed: Expected 2 but got wrong value");
         process.exit(1);
     }
+    if (Utils_js_1.utils.addUser("Suphakon", "suphakon@gmail.com", "1212312121")) {
+        console.log("Test passed!");
+    }
+    else {
+        console.log("Case 5 Failed: Expected true but got false");
+        process.exit(1);
+    }
 };
 unit_test();
